@@ -336,7 +336,7 @@ alertmanager:
 
     ## Service type
     ##
-    type: ClusterIP
+    type: NodePort
 
   ## Configuration for creating a separate Service for each statefulset Alertmanager replica
   ##
@@ -366,7 +366,7 @@ alertmanager:
 
     ## Service type
     ##
-    type: ClusterIP
+    type: NodePort
 
   ## If true, create a serviceMonitor for alertmanager
   ##
@@ -1581,7 +1581,7 @@ prometheusOperator:
   ## Service type
   ## NodePort, ClusterIP, LoadBalancer
   ##
-    type: ClusterIP
+    type: NodePort
 
     ## List of IP addresses at which the Prometheus server service is available
     ## Ref: https://kubernetes.io/docs/user-guide/services/#external-ips
@@ -1786,7 +1786,7 @@ prometheus:
 
     ## Service type
     ##
-    type: ClusterIP
+    type: NodePort
 
     ## gRPC port config
     portName: grpc
@@ -1895,7 +1895,7 @@ prometheus:
 
     ## Service type
     ##
-    type: ClusterIP
+    type: NodePort
 
     ## Additional port to define in the Service
     additionalPorts: []
@@ -1934,7 +1934,7 @@ prometheus:
 
     ## Service type
     ##
-    type: ClusterIP
+    type: NodePort
 
   ## Configure pod disruption budgets for Prometheus
   ## ref: https://kubernetes.io/docs/tasks/run-application/configure-pdb/#specifying-a-poddisruptionbudget
